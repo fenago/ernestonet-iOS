@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1087482208044",
+    "firebase_url": "https://edustar-9f5da.firebaseio.com",
+    "project_id": "edustar-9f5da",
+    "storage_bucket": "edustar-9f5da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087482208044:android:e4508c101d6bf42c88d689",
+        "android_client_info": {
+          "package_name": "abservetech.edustar.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087482208044-abf9rtevo35apqidqsb0c7r5gb97qjsv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "abservetech.edustar.app",
+            "certificate_hash": "dcb32df98538f9d18b371dd50bd011a21f937605"
+          }
+        },
+        {
+          "client_id": "1087482208044-mk8281835alc4n7m0f4jmapfdupb22vf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlOmDoo6h_e8G2h3D29-bch5r4guRLWZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087482208044-mk8281835alc4n7m0f4jmapfdupb22vf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

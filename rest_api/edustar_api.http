@@ -1,0 +1,92 @@
+// Authentication
+GET {{baseUrl}}user/phonenumvalidation?phone_number=8870909090
+Accept: application/json
+
+###
+
+POST {{baseUrl}}user/signinmobile
+Content-Type: application/json
+Authorization: Bearer {{accessToken}}
+
+{
+	"mobile_number": "8870222222",
+	"role": 2,
+	"device": "android",
+	"mobile_token": "xxxxxxxx",
+	"password": "Vinoth1234"
+}
+
+###
+
+POST {{baseUrl}}user/signin
+Content-Type: application/json
+
+{
+	"mobile_number": "1234567890",
+	"role": 2,
+	"device": "android",
+	"mobile_token": "qqqqqqqqqqqqqqqqqqqq"
+}
+
+###
+POST {{baseUrl}}user/registration
+content-type: application/json
+
+{
+	"name": "Vinoth Vino 4",
+	"email": "vinoth4@gmail.com",
+	"phone_number": "8870444444",
+	"device": "android",
+	"mobile_token": "xxxxxxxx", 
+	"password": "123456",
+}
+
+###
+POST {{baseUrl}}user/forgotpassword
+content-type: application/json
+
+{
+	"phone_number": "8870222222",
+}
+
+###
+POST {{baseUrl}}user/resetpassword
+content-type: application/json
+
+{
+	"phone_number": "8870222222",
+	"password": "Vinoth123",
+	"confirmpassword": "Vinoth123", 
+	"phone_otp": "12345",
+}
+
+
+POST {{baseUrl}}user/changepass
+content-type: application/json
+
+{
+	"old_password": "sdfd8870444444",
+	"new_password": "android",
+	"user_id": "4", 
+}
+
+// User
+
+###
+GET {{baseUrl}}user/profileview?user_id=4
+Accept: application/json
+
+// Courses and Categories
+
+###
+GET {{baseUrl}}course/courses
+Accept: application/json
+
+###
+GET {{baseUrl}}course/category
+Accept: application/json
+
+###
+
+GET {{baseUrl}}course/mycourse?user_id=4
+Accept: application/json

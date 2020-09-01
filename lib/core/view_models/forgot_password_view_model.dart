@@ -1,0 +1,26 @@
+import 'package:flutter/foundation.dart';
+
+import '../../core/utils/alert_dialog_helper.dart' as alert_helper;
+import '../exceptions/auth_exception.dart';
+import '../utils/validators.dart';
+import '../services/auth/auth_service.dart';
+import 'base_view_model.dart';
+
+class ForgotPasswordViewModel extends BaseViewModel with Validators {
+  final AuthService _authService;
+
+  ForgotPasswordViewModel({@required AuthService authService}) : _authService = authService;
+
+  Future<bool> forgotPassword(String mobileNumber) async {
+    try {
+      setState(ViewState.busy);
+      final requestSuccess = await _authService.forgotPassword(mobileNumber);
+      setState(ViewState.idle);
+      return requestSuccess.success;
+    } on AuthException catch (e) {
+      setState(ViewState.idle);
+      alert_helper.showErrorAlert(e.message);
+      return false;
+    }
+  }
+}

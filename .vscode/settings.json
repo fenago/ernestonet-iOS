@@ -1,0 +1,12 @@
+{
+    "rest-client.environmentVariables": {
+        "development": {
+            "baseUrl": "https://www.absera.com/edustar/dev/api/",
+            "accessToken": "ZnBMbFhPcEQ2RllmQlMwZU0wbERjTUJ5T3FFYTp4ZFo0TdfsfsFZsaGc5bnlzTWFpY2I1YXBjR3M1TDhh",
+        },
+        "production": {
+            "baseUrl": "https://absera.com/edustar/api/",
+            "accessToken": "ZnBMbFhPcEQ2RllmQlMwZU0wbERjTUJ5T3FFYTp4ZFo0TdfsfsFZsaGc5bnlzTWFpY2I1YXBjR3M1TDhh",
+        }
+    }
+}
